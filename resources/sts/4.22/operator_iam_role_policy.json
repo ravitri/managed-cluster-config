@@ -11,7 +11,9 @@
       ],
       "Condition": {
         "StringEquals": {
-          "%{issuer_url}:sub": [ "%{service_accounts}" ]
+          "%{issuer_url}:sub": [
+            "%{service_accounts}"
+          ]
         }
       }
     }

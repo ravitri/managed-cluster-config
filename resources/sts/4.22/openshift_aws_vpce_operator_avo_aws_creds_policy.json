@@ -36,19 +36,19 @@
       "Sid": "Route53ManageRecords",
       "Effect": "Allow",
       "Action": [
-          "route53:ChangeResourceRecordSets"
+        "route53:ChangeResourceRecordSets"
       ],
       "Resource": "*",
       "Condition": {
-          "ForAllValues:StringLike": {
-              "route53:ChangeResourceRecordSetsNormalizedRecordNames": [
-                  "*.openshiftapps.com",
-                  "*.devshift.org",
-                  "*.hypershift.local",
-                  "*.openshiftusgov.com",
-                  "*.devshiftusgov.com"
-              ]
-          }
+        "ForAllValues:StringLike": {
+          "route53:ChangeResourceRecordSetsNormalizedRecordNames": [
+            "*.openshiftapps.com",
+            "*.devshift.org",
+            "*.hypershift.local",
+            "*.openshiftusgov.com",
+            "*.devshiftusgov.com"
+          ]
+        }
       }
     }
   ]
